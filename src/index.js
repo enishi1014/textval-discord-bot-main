@@ -12,7 +12,7 @@ const client = new Client({intents : [
     GatewayIntentBits.MessageContent, 
     GatewayIntentBits.GuildMessageReactions]});
 
-client.login(process.env.token);
+client.login(process.env.DISCORD_TOKEN);
 
 client.on("ready", ()=>{
     console.log(`Hi.${client.user.username} is ready.`)
